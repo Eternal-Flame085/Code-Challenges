@@ -12,11 +12,7 @@
 def numbers_sum(arr)
     sum = 0
 
-    arr.each do |element|
-        if element.is_a?(Numeric)
-            sum += element
-        end
-    end
+    arr.each {|element| sum += element if element.is_a?(Numeric)}
 
     return sum
 end
