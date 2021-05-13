@@ -30,13 +30,9 @@ def add_letters(arr)
 	alphabet = ('a'..'z').to_a
     total = 0
 
-    arr.each do |letter|
-        total += alphabet.index(letter) + 1
-    end
-
-    if total > 26
-        total %= 26
-    end
+    arr.each { |letter| total += alphabet.index(letter) + 1 }
+    total %= 26 if total > 26
+    
     return alphabet[total-1]
 end
 
