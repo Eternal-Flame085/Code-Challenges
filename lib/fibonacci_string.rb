@@ -9,18 +9,20 @@
 
 # fib_str(6, ["n", "k"]) ➞ "n, k, kn, knk, knkkn, knkknknk"
 
-def fib_str(n, str)
-    fibonacci_string = str
+class Fibonacci
+    def fib_str(n, str)
+        fibonacci_string = str
 
-	(n-2).times do
-        fibonacci_string << fibonacci_string[-1] + fibonacci_string[-2]
-	end
+        (n-2).times do
+            fibonacci_string << fibonacci_string[-1] + fibonacci_string[-2]
+        end
 
-    fibonacci_string
+        fibonacci_string
+    end
 end
 
-p fib_str(3, ["j", "h"]) # ➞ "j, h, hj"
+# p fib_str(3, ["j", "h"]) # ➞ "j, h, hj"
 
-p fib_str(5, ["e", "a"]) # ➞ "e, a, ae, aea, aeaae"
+# p fib_str(5, ["e", "a"]) # ➞ "e, a, ae, aea, aeaae"
 
-p fib_str(6, ["n", "k"]) # ➞ "n, k, kn, knk, knkkn, knkknknk"
+# p fib_str(6, ["n", "k"]) # ➞ "n, k, kn, knk, knkkn, knkknknk"
