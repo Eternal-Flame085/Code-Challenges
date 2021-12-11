@@ -1,7 +1,7 @@
 require "minitest/autorun"
 require_relative '../lib/pascals_triangle'
 
-class TestMissingAlphabet < Minitest::Test
+class TestPascalsTriangle < Minitest::Test
     def setup
       @pascals_triangle = PascalsTriangle.new
     end
